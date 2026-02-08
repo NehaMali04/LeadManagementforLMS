@@ -11,6 +11,7 @@ import {
   ChevronRight,
   Target,
   X,
+  User,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -32,6 +33,7 @@ const managerItems: SidebarItem[] = [
   { icon: Target, label: "Lead Assignment", path: "/manager/leads" },
   { icon: Users, label: "Team Performance", path: "/manager/team" },
   { icon: FileText, label: "Reports", path: "/manager/reports" },
+  { icon: User, label: "Profile", path: "/manager/profile" },
   { icon: Settings, label: "Settings", path: "/manager/settings" },
 ];
 

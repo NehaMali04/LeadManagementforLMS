@@ -11,15 +11,18 @@ import AdminLeads from "./pages/admin/AdminLeads";
 import AdminUsers from "./pages/admin/AdminUsers";
 import AdminReports from "./pages/admin/AdminReports";
 import AdminSettings from "./pages/admin/AdminSettings";
+import AdminProfile from "./pages/admin/AdminProfile";
 import ManagerDashboard from "./pages/manager/ManagerDashboard";
 import ManagerTeam from "./pages/manager/ManagerTeam";
 import ManagerReports from "./pages/manager/ManagerReports";
 import ManagerLeads from "./pages/manager/ManagerLeads";
 import ManagerSettings from "./pages/manager/ManagerSettings";
+import ManagerProfile from "./pages/manager/ManagerProfile";
 import AgentDashboard from "./pages/agent/AgentDashboard";
 import MyLeads from "./pages/agent/MyLeads";
 import AddLeadPage from "./pages/agent/AddLeadPage";
 import Settings from "./pages/agent/Settings";
+import AgentProfile from "./pages/agent/AgentProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -40,6 +43,7 @@ const App = () => (
           <Route path="/admin/leads" element={<AdminLeads />} />
           <Route path="/admin/users" element={<AdminUsers />} />
           <Route path="/admin/reports" element={<AdminReports />} />
+          <Route path="/admin/profile" element={<AdminProfile />} />
           <Route path="/admin/settings" element={<AdminSettings />} />
           
           {/* Manager Routes */}
@@ -47,12 +51,14 @@ const App = () => (
           <Route path="/manager/leads" element={<ManagerLeads />} />
           <Route path="/manager/team" element={<ManagerTeam />} />
           <Route path="/manager/reports" element={<ManagerReports />} />
+          <Route path="/manager/profile" element={<ManagerProfile />} />
           <Route path="/manager/settings" element={<ManagerSettings />} />
           
           {/* Agent Routes */}
           <Route path="/agent" element={<AgentDashboard />} />
           <Route path="/agent/leads" element={<MyLeads />} />
           <Route path="/agent/add-lead" element={<AddLeadPage />} />
+          <Route path="/agent/profile" element={<AgentProfile />} />
           <Route path="/agent/settings" element={<Settings />} />
           <Route path="/agent/*" element={<AgentDashboard />} />
           
