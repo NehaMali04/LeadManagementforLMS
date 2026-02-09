@@ -194,7 +194,7 @@ const AdminReports = () => {
 
   return (
     <DashboardLayout role="admin" title="Reports & Analytics">
-      <div className="space-y-8">
+      <div className="space-y-8 min-h-screen bg-white">
         {/* Premium Header */}
         <motion.div
           initial={{ opacity: 0, y: -30 }}
@@ -550,7 +550,7 @@ const AdminReports = () => {
                 </div>
 
                 {/* Tab Content Areas */}
-                <div className="p-6">
+                <div className="p-6 bg-white">
                   <TabsContent value="overview" className="space-y-6 mt-0">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
